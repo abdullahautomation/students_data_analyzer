@@ -40,3 +40,43 @@ git clone https://github.com/abdullahautomation/student-result-analyzer.git
 ```
 
 2. Add your CSV file in this format:
+Name,Math,English,Science
+Ahmed,75,60,80
+Sara,45,30,55
+
+3. Run the script:
+```bash
+python main.py
+```
+
+---
+
+## 📁 Project Structure
+student-result-analyzer/
+│
+├── main.py          # Main script
+├── students.csv     # Sample input file
+├── README.md        # Documentation
+└── screenshots/     # Output previews
+
+---
+
+## 🛠️ Built With
+
+- [Python](https://www.python.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [openpyxl](https://openpyxl.readthedocs.io/)
+
+---
+
+## 👨‍💻 Author
+
+**Abdullah**  
+🔗 [GitHub](https://github.com/abdullahautomation)  
+🌐 [Fiverr](https://www.fiverr.com/abdullah7514)
+
+---
+
+## 📃 License
+
+This project is open source and available under the [MIT License](LICENSE).
