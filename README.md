@@ -43,7 +43,6 @@ git clone https://github.com/abdullahautomation/student-result-analyzer.git
 Name,Math,English,Science
 Ahmed,75,60,80
 Sara,45,30,55
-
 3. Run the script:
 ```bash
 python main.py
@@ -58,7 +57,6 @@ student-result-analyzer/
 ├── students.csv     # Sample input file
 ├── README.md        # Documentation
 └── screenshots/     # Output previews
-
 ---
 
 ## 🛠️ Built With
