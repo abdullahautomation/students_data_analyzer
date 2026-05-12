@@ -1,5 +1,6 @@
 import pandas as pd
 import openpyxl
+import matplotlib.pyplot as plt
 from openpyxl.styles import PatternFill, Font, Side, Border
 def start(input, output):
     df = pd.read_csv(input)
@@ -50,8 +51,21 @@ def start(input, output):
     for row in ws.iter_rows(min_row=2):
         for cell in row:
             cell.border = bor_in
+    aa = df["Results"].value_counts()
+    print(aa)
     wb.save(output)
+    fig, axes = plt.subplots(1, 2)
+    axes[0].bar(df["Name"], df["Average"], color="blue")
+    axes[0].set_title("Student Averages")
+    axes[0].set_xlabel("Name")
+    axes[0].set_ylabel("Average")
+    axes[0].tick_params(axis='x', rotation=45)
+    axes[1].pie(aa, labels=["Pass", "Fail"], autopct="%1.1f%%", colors=["green", "red"])
+    axes[1].set_title("Pass V/S Fail")
+    plt.tight_layout()
+    plt.show()
     wb.close()
+    
     print("Done! File Saved in Folder. Now you can close this Window.")
 
 start("students.csv", "output_results.xlsx")

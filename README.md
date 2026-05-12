@@ -1,8 +1,8 @@
 # 🎓 Student Result Analyzer
 
-A Python tool that reads student marks from a CSV file and automatically generates a professional, color-coded Excel report.
+A Python tool that reads student marks from a CSV file and automatically generates a professional, color-coded Excel report with visual charts.
 
-Built with **Python**, **Pandas**, and **openpyxl**.
+Built with **Python**, **Pandas**, **openpyxl**, and **Matplotlib**.
 
 ---
 
@@ -10,6 +10,7 @@ Built with **Python**, **Pandas**, and **openpyxl**.
 
 ![Messy Data](screenshots/messy.png)
 ![Clean Report](screenshots/clean.png)
+![Charts](screenshots/charts.png)
 
 ---
 
@@ -21,6 +22,7 @@ Built with **Python**, **Pandas**, and **openpyxl**.
 - Color-coded output — 🟢 Green = Pass, 🔴 Red = Fail
 - Professional borders and formatting
 - Yellow header row for clarity
+- 📊 Visual charts — Bar chart (averages) + Pie chart (Pass/Fail ratio)
 
 ---
 
@@ -29,7 +31,7 @@ Built with **Python**, **Pandas**, and **openpyxl**.
 Install dependencies using pip:
 
 ```bash
-pip install pandas openpyxl
+pip install pandas openpyxl matplotlib
 ```
 
 ---
@@ -61,6 +63,7 @@ python script.py
 ```
 
 5. Your Excel report will be saved as `output_results.xlsx` ✅
+6. Charts will appear automatically in a new window 📊
 
 ---
 
@@ -75,7 +78,8 @@ student-result-analyzer/
 ├── README.md           # Project documentation
 └── screenshots/        # Output previews
     ├── messy.png       # Raw CSV data
-    └── clean.png       # Formatted Excel output
+    ├── clean.png       # Formatted Excel output
+    └── charts.png      # Visual charts output
 ```
 
 ---
@@ -85,6 +89,7 @@ student-result-analyzer/
 - [Python](https://www.python.org/)
 - [Pandas](https://pandas.pydata.org/)
 - [openpyxl](https://openpyxl.readthedocs.io/)
+- [Matplotlib](https://matplotlib.org/)
 
 ---
 
